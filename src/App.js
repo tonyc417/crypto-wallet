@@ -1,33 +1,38 @@
-import React,{useEffect} from 'react';
+import React,{useEffect, useState} from 'react';
+import Trading from './components/trading';
 import './App.css';
 
  const App = () => {
+  const API_KEY = '';
+
+  const [ticker, setInfo] = useState([]);
 
   useEffect(() => {
     getData();
   }, []);
 
    const getData = async () => {
-     const response = await fetch(`https://api.coindesk.com/v1/bpi/currentprice.json`);
+     const response = await fetch(`https://cloud.iexapis.com/stable/stock/aapl/quote?token=${API_KEY}`);
      const data = await response.json();
+     setInfo(data);
      console.log(data);
-     console.log(data.bpi.USD);
    }
   return (
-    <div>
-      <PageHead />
+    <div className="App">
+      <h1>Watchlist</h1>
+      <Trading title={ticker.companyName} price={ticker.high} volume={ticker.latestVolume}/>
     </div>
   );
 }
 
-function PageHead() {
-  return(
-    <div className="App">
-      <h1>Crypto Wallet</h1>
-      <p>Latest BitCoin Price:</p>
-      <p>Latest XRP Price:</p>
-    </div>
-  );
-}
+// function PageHead() {
+//   return(
+//     <div className="App">
+//       <h1>Stock Wallet</h1>
+//       <p>Apple Quote:</p>
+//       <p>Latest XRP Price:</p>
+//     </div>
+//   );
+// }
 
 export default App;
