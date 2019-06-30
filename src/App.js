@@ -2,6 +2,7 @@ import React,{useEffect, useState} from 'react';
 import Trading from './components/trading';
 import Bitcoin from './components/bitcoin';
 import Navbar from './components/Navbar';
+import Welcome from './components/welcome';
 import './App.css';
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
 
    <div>
      <Navbar />
+     <Welcome />    
      <Trading title={ticker.companyName} price={ticker.high} volume={ticker.latestVolume}/>
      <Bitcoin priceBit={total.rate}/>
    </div>
