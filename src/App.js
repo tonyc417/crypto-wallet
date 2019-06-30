@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from 'react';
 import Trading from './components/trading';
 import Bitcoin from './components/bitcoin';
+import Navbar from './components/Navbar';
 import './App.css';
 
 const App = () => {
@@ -32,25 +33,12 @@ const App = () => {
  return (
 
    <div>
-     <Nav />
+     <Navbar />
      <Trading title={ticker.companyName} price={ticker.high} volume={ticker.latestVolume}/>
      <Bitcoin priceBit={total.rate}/>
    </div>
  );
 }
 
-const Nav = () => {
- return(
-   <div>
-     <ul className="navBar">
-       <li>Home</li>
-       <li>News</li>
-       <li>Test</li>
-     </ul>
-     <h1>Stock Wallet</h1>
-     <h1>Watchlist</h1>
-   </div>
- )
-}
 
 export default App;
