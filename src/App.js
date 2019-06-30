@@ -8,9 +8,10 @@ const App = () => {
  const API_KEY = '';
 
  const [ticker, setInfo] = useState([]);
+ const [total, setPrice] = useState([]);
 
  useEffect(() => {
-  //  getData();
+   getData();
   getBit();
  }, []);
 
@@ -24,7 +25,8 @@ const App = () => {
   const getBit = async () => {
     const response = await fetch(`https://api.coindesk.com/v1/bpi/currentprice.json`);
     const data = await response.json();
-    console.log(data);
+    setPrice(data.bpi.USD);
+    console.log(data.bpi);
   }
 
  return (
@@ -32,6 +34,7 @@ const App = () => {
    <div>
      <Nav />
      <Trading title={ticker.companyName} price={ticker.high} volume={ticker.latestVolume}/>
+     <Bitcoin priceBit={total.rate}/>
    </div>
  );
 }
