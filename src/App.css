@@ -23,6 +23,33 @@
   color: #61dafb;
 }
 
+nav {
+  all: unset;
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: rgba(85, 214, 170, .70);
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  margin-left: 3em;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .navBar {
   background-color: #333;
   overflow: hidden;
