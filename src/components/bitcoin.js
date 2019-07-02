@@ -5,6 +5,7 @@ const Bit = ({priceBit}) => {
         <div>
             <h2>Bitcoin Watch</h2>
             <p>The Current Bitcoin Price in USD is: ${priceBit} </p>
+            <hr></hr>
         </div>
     )
 }

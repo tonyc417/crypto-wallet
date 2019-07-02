@@ -3,6 +3,7 @@ import Trading from './components/trading';
 import Bitcoin from './components/bitcoin';
 import Navbar from './components/Navbar';
 import Welcome from './components/welcome';
+import News from './components/news';
 import './App.css';
 
 const App = () => {
@@ -38,6 +39,7 @@ const App = () => {
      <Welcome />    
      <Trading title={ticker.companyName} price={ticker.high} volume={ticker.latestVolume}/>
      <Bitcoin priceBit={total.rate}/>
+     <News />
    </div>
  );
 }
