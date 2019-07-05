@@ -2,9 +2,13 @@
   text-align: center;
 }
 
-body, .jumbotron {
-background: #323232;
-color: white;
+.row {
+  background-color: #1e222d;
+  color: white;
+}
+
+.tickerSymbol {
+  height: 8px;
 }
 
 .App-logo {
