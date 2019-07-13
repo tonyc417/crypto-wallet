@@ -3,6 +3,7 @@ import Trading from './components/trading';
 import Bitcoin from './components/bitcoin';
 import Navbar from './components/Navbar';
 import News from './components/news';
+import Line from './components/line';
 import './App.css';
 
 const App = () => {
@@ -59,6 +60,7 @@ const App = () => {
         volume={ticker.latestVolume} high={ticker.week52High} closing={ticker.close}/>
       <Bitcoin priceBit={total.rate} />
       <News />
+      <Line />
     </div>
   );
 }
