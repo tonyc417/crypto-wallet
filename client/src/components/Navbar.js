@@ -8,7 +8,7 @@ const navbar = () => {
                     Dow Jones
                 </a>
                 <svg className="tickerSymbol" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 8">
-                    <path fill="none" stroke="currentcolor" stroke-linecap="round" stroke-width="2" d="m1 6 5-4 5 4">
+                    <path fill="none" stroke="currentcolor" strokeLinecap="round" strokeWidth="2" d="m1 6 5-4 5 4">
                     </path>
                 </svg>
                 <p>0.77%</p>
@@ -18,7 +18,7 @@ const navbar = () => {
                     S&P 500
                 </a>
                 <svg className="tickerSymbol" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 8">
-                    <path fill="none" stroke="currentcolor" stroke-linecap="round" stroke-width="2" d="m1 6 5-4 5 4">
+                    <path fill="none" stroke="currentcolor" strokeLinecap="round" strokeWidth="2" d="m1 6 5-4 5 4">
                     </path>
                 </svg>
                 <p>0.77%</p>
@@ -28,7 +28,7 @@ const navbar = () => {
                     Nasdaq
                 </a>
                 <svg className="tickerSymbol" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 8">
-                    <path fill="none" stroke="currentcolor" stroke-linecap="round" stroke-width="2" d="m1 6 5-4 5 4">
+                    <path fill="none" stroke="currentcolor" strokeLinecap="round" strokeWidth="2" d="m1 6 5-4 5 4">
                     </path>
                 </svg>
                 <p>0.77%</p>
@@ -38,7 +38,7 @@ const navbar = () => {
                     Gold
                 </a>
                 <svg className="tickerSymbol" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 8">
-                    <path fill="none" stroke="currentcolor" stroke-linecap="round" stroke-width="2" d="m1 6 5-4 5 4">
+                    <path fill="none" stroke="currentcolor" strokeLinecap="round"strokeWidth="2" d="m1 6 5-4 5 4">
                     </path>
                 </svg>
                 <p>0.77%</p>
@@ -48,7 +48,7 @@ const navbar = () => {
                     GlobalDow
                 </a>
                 <svg className="tickerSymbol" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 8">
-                    <path fill="none" stroke="currentcolor" stroke-linecap="round" stroke-width="2" d="m1 6 5-4 5 4">
+                    <path fill="none" stroke="currentcolor" strokeLinecap="round" strokeWidth="2" d="m1 6 5-4 5 4">
                     </path>
                 </svg>
                 <p>0.77%</p>
