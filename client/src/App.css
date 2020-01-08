@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+body {
+  background-color: #1f1f1f;
+  color: white;
+}
+
 .row {
   background-color: #1e222d;
   color: white;
@@ -12,8 +17,12 @@
   margin-bottom: 4px;
 }
 
+.frontSearch {
+  background-color: #282c34;
+}
+
 .tickerSymbol {
-  height: 8px;
+  height: 7px;
 }
 
 #bitCoin {
@@ -22,7 +31,6 @@
 
 .stockChart {
   height: 40%;
-  
 }
 
 .App-logo {

@@ -2,9 +2,9 @@ import React from 'react';
 
 const Bit = ({priceBit}) => {
     return(
-        <div>
+        <div className="text-center">
             <h2 id="bitCoin">Bitcoin Watch</h2>
-            <p>The Current Bitcoin Price in USD is: ${priceBit} </p>
+            <h4>The Current Bitcoin Price in USD is: ${priceBit} </h4>
             <hr></hr>
         </div>
     )

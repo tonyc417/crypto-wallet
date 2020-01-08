@@ -15,7 +15,7 @@ const App = () => {
   const [query, setQuery] = useState('TSLA');
 
   useEffect(() => {
-    // getData();
+    getData();
     getBit();
   }, [query]);
 
@@ -47,7 +47,7 @@ const App = () => {
     <div>
       <Navbar />
       <div className="text-center">
-        <div className="jumbotron" >
+        <div className="jumbotron frontSearch text-white">
           <h1>Welcome, Traders</h1>
           <form onSubmit={getSearch} className="search-form">
             <input className="search-bar" type="text" value={search} onChange={updateSearch} placeholder="Search by symbol" />
