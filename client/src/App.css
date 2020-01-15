@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-body {
-  background-color: #1f1f1f;
-  color: white;
-}
-
 .row {
   background-color: #1e222d;
   color: white;
@@ -19,6 +14,18 @@ body {
 
 .frontSearch {
   background-color: #282c34;
+}
+
+.search-bar{
+  padding: 4px;
+}
+
+.search-button{
+  font-size: 21px;
+  background-color: grey;
+  color: white;
+  border: none;
+
 }
 
 .tickerSymbol {

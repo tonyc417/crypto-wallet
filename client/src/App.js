@@ -55,8 +55,8 @@ const App = () => {
           </form>
         </div>
       </div>
-      <Trading title={ticker.companyName} price={ticker.high}
-        volume={ticker.latestVolume} high={ticker.week52High} closing={ticker.close}/>
+      <Trading title={ticker.companyName} price={ticker.latestPrice}
+        volume={ticker.iexVolume} high={ticker.week52High} closing={ticker.close}/>
       <Bitcoin priceBit={total.rate} />
       <News />
     </div>
